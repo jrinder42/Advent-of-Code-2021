@@ -11,12 +11,16 @@ with open('day01.txt', 'r') as file:
         line = line.strip('\n')
         vals.append(float(line))
 
+# Part 1
+
 inc = 0
 for i in range(1, len(vals)):
     if vals[i] - vals[i - 1] > 0:
         inc += 1
 
 print(f'Advent of Code Day 1 Answer Part 1: {inc}')
+
+# Part 2
 
 inc = 0
 for i in range(len(vals) - 3):
