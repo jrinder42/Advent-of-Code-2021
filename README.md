@@ -74,4 +74,11 @@ Collection of Python solutions for [Advent of Code 2021](https://adventofcode.co
         <td>01:34:45</td>
         <td>4461</td>
     </tr>
+    <tr>
+        <td>Day 9</td>
+        <td>00:07:46</td>
+        <td>959</td>
+        <td>00:45:08</td>
+        <td>3506</td>
+    </tr>
 </table>
