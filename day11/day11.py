@@ -13,6 +13,8 @@ with open('day11.txt', 'r') as file:
         line = line.strip('\n')
         nums.append([int(num)for num in line])
 
+# Part 1
+
 # from stackoverflow
 def get_adjacent_indices(i, j, m, n) -> list:
     adjacent_indices = []
