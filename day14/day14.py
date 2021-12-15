@@ -54,7 +54,6 @@ for i in range(1, len(template)):
     pair = template[i - 1:i + 1]
     hold[pair] += 1
 
-steps = 10
 def polymer(hold, steps=1):
     for step in range(steps):
         inner = defaultdict(int)
