@@ -57,7 +57,7 @@ def reduce(topaz):
             start = 0
             for elem in re.findall(r'\d+', topaz[:indx + 1]):
                 place = topaz.index(elem, start)
-                start = place + 1
+                start = place + len(elem)  # quick change
                 fs = (place, int(elem))  # (index, number)
             if fs[-1] > 9:
                 length = len(str(fs[-1]))  # should always be 2
@@ -103,7 +103,7 @@ def reduce(topaz):
 
                     # modify string to reflect this new e
                     topaz = f'{topaz[:o_index]}{e}{topaz[c_index:]}'
-                elif isinstance(e[1], int):  # isinstance(e[0], list)
+                elif isinstance(e[1], int):  
                     e[1] += e[0][1]
                     # check if there is a number to the right
                     left_numbers = re.findall(r'\d+', topaz[:o_index])
