@@ -103,7 +103,7 @@ def reduce(topaz):
 
                     # modify string to reflect this new e
                     topaz = f'{topaz[:o_index]}{e}{topaz[c_index:]}'
-                elif isinstance(e[1], int):  
+                elif isinstance(e[1], int):
                     e[1] += e[0][1]
                     # check if there is a number to the right
                     left_numbers = re.findall(r'\d+', topaz[:o_index])
