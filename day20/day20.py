@@ -54,7 +54,7 @@ def enhance(second, steps=2):
         else:
             flip = 1 if first[flip_value] == '#' else 0
 
-        second = np.pad(second, pad_width=3, constant_values=flip)
+        second = np.pad(second, pad_width=2, constant_values=flip)
         matrix = second.copy()
         for r in range(matrix.shape[0]):
             for c in range(matrix.shape[1]):
