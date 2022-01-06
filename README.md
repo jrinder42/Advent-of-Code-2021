@@ -194,3 +194,5 @@ Collection of Python solutions for [Advent of Code 2021](https://adventofcode.co
         <td>628</td>
     </tr>
 </table>
+
+* Day 23 is slow
